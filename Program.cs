@@ -45,7 +45,7 @@ namespace exercitiiLaborator2
         {
             //Să se scrie un program care citeşte de la tastatură un şir de numere
             //naturale şi determină media aritmetică a celor pare.
-            Console.WriteLine("Introduceti un sir de numere de maxim 3 cifre.");
+            Console.WriteLine("Introduceti un sir de numere de maxim 3 cifre, despartite de spatiu.");
             string numere = (Console.ReadLine());
             string cifrePlusSpatiu = "01234 56789";
             for (int i = 0; i < numere.Length; i++)
@@ -79,7 +79,7 @@ namespace exercitiiLaborator2
             }
             int suma = 0;
             int counter = 0;
-            double medieAritmetica;
+            int medieAritmetica;
             for (int i = 0; i < numere.Length; i++)
             {
                 if (numere[i]==' ')
