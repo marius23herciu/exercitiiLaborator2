@@ -67,7 +67,7 @@ namespace exercitiiLaborator2
                 {
                     numerotareCifre++;
                 }
-                if (numerotareCifre>=3)
+                if (numerotareCifre>3)
                 {
                     Console.WriteLine("Introduceti numere de cel mult 3 cifre!");
                     return;
