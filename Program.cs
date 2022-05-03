@@ -7,8 +7,8 @@ namespace exercitiiLaborator2
         static void Main(string[] args)
         {
             //Ex1();
-            Ex2();
-            //Ex3();
+            //Ex2();
+            Ex3();
         }
         static void Ex1()
         {
@@ -155,7 +155,24 @@ namespace exercitiiLaborator2
         }
         static void Ex3()
         {
-            
+            //Scrieti un program care va determina daca un numar este sau nu
+            //palindrom
+            Console.WriteLine("Introduceti un numar.");
+            int numar = int.Parse(Console.ReadLine());
+            string sirNumar = numar.ToString();
+            string intors = "";
+            for (int i = sirNumar.Length-1; i >= 0; i--)
+            {
+                intors = intors + sirNumar[i];
+            }
+            if (sirNumar==intors)
+            {
+                Console.WriteLine("Numarul introdus este un palindrom.");
+            }
+            else
+            {
+                Console.WriteLine("Numarul introdus NU este un palindrom.");
+            }
         }
 
     }
