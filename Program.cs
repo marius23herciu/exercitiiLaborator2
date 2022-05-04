@@ -18,7 +18,7 @@ namespace exercitiiLaborator2
             int numar = int.Parse(Console.ReadLine());
             if (numar < 0)
             {
-                Console.WriteLine("Fara nuere negative!");
+                Console.WriteLine("Fara numere negative!");
                 return;
             }
             if (numar == 0 || numar == 1)
@@ -160,11 +160,7 @@ namespace exercitiiLaborator2
             string cifrePlusSpatiu = "01234 56789";
             for (int i = 0; i < numere.Length; i++)
             {
-                if (cifrePlusSpatiu.Contains(numere[i]))
-                {
-                    continue;
-                }
-                else
+                if (!cifrePlusSpatiu.Contains(numere[i]))
                 {
                     Console.WriteLine("Introduceti doar numere pozitive! Nu introduceti litere sau alte caractere!");
                     return;
@@ -173,10 +169,10 @@ namespace exercitiiLaborator2
             int suma = 0;
             int numerotareNumerePare = 0;
             int medieAritmetica;
-            string sirTemporar = "";
+            string sirTemporar;
             for (int i = 0; i < numere.Length; i++)
             {
-                sirTemporar = "";
+                sirTemporar = string.Empty;
                 int startI = i;
                 while (numere[i] != ' ')
                 {
@@ -229,6 +225,7 @@ namespace exercitiiLaborator2
                 Console.WriteLine("Numarul introdus NU este un palindrom.");
             }
         }
+        
 
     }
 }
